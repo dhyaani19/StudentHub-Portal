@@ -1,0 +1,71 @@
+ <link rel="stylesheet" href="css/style.css">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Hello I am learning html</h1>
+    <p>
+        The old clock on the wall ticked slow. Leo sat by the cold
+        window and watched the grey rain fall on the empty street.
+        He held a small, dry leaf in his hand and smiled.
+        Spring would come back soon.
+    </p>
+    <h2>Text Box</h2>
+    <input type="text" id="textBox">
+
+    <h2>Text Area</h2>
+    <textarea rows="5" cols="30" id="textArea"></textarea>
+
+    <h2>Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password">
+        <br><br>
+
+        <h2>Gender</h2>
+
+        <input type="radio" name="gender" value="male" id="male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="female" id="female">
+        <label>Female</label>
+
+        <h2>Hobbies</h2>
+
+        <input type="checkbox" name="hobby" value="reading" id="reading">
+        <label>Reading</label>
+
+        <input type="checkbox" name="hobby" value="gaming" id="gaming">
+        <label>Gaming</label>
+
+        <input type="checkbox" name="hobby" value="drawing" id="drawing">
+        <label>Drawing</label>
+
+        <input type="checkbox" name="hobby" value="sports" id="sports">
+        <label>Sports</label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
