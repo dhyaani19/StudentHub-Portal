@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Hub Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="notification">
+        📢 Exam results will be declared soon!
+        <button onclick="closeNotification()">X</button>
+    </div>
+
+    <header>
+        <h1>Student Hub Portal</h1>
+        <button onclick="toggleMenu()">☰</button>
+        <button onclick="changeTheme()">🌙</button>
+    </header>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="pages/syllabus.html">Syllabus</a>
+        <a href="pages/attendance.html">Attendance</a>
+        <a href="pages/result.html">Result</a>
+        <a href="pages/timetable.html">Timetable</a>
+        <a href="pages/profile.html">Profile</a>
+    </nav>
+
+    <section class="slider">
+
+        <h2 id="slideText">Welcome to Student Hub</h2>
+
+        <button onclick="previousSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+
+    </section>
+
+    <section>
+        <button onclick="openModal()">Show Notice</button>
+    </section>
+
+    <div id="modal">
+        <div class="modal-content">
+
+            <span onclick="closeModal()">X</span>
+
+            <h2>Important Notice</h2>
+
+            <p>
+                Please check your timetable and attendance regularly.
+            </p>
+
+        </div>
+    </div>
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <button onclick="showAnswer(1)">
+            What is Student Hub?
+        </button>
+
+        <p id="answer1">
+            Student Hub is a portal for students to access academic information.
+        </p>
+
+        <button onclick="showAnswer(2)">
+            Where can I check my result?
+        </button>
+
+        <p id="answer2">
+            You can check your result from the Result page.
+        </p>
+
+        <button onclick="showAnswer(3)">
+            Where can I check my timetable?
+        </button>
+
+        <p id="answer3">
+            You can check your timetable from the Timetable page.
+        </p>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
