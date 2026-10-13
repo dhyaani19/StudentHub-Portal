@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf3f7;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    color: #225b55;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.container > p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+form label:not(.remember) {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a6f68;
+    box-shadow: 0 0 0 2px rgba(42, 111, 104, 0.12);
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.remember input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #225b55;
+}
+
+button,
+.btn {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #225b55;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #2a6f68;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fce8e8;
+    color: #a12626;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.dashboard {
+    max-width: 650px;
+}
+
+.dashboard h2 {
+    text-align: left;
+}
+
+.dashboard .btn {
+    margin-top: 18px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
