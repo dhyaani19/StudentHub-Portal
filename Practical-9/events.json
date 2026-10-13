@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Coding Contest",
+        "category": "Technical",
+        "date": "2026-09-20",
+        "venue": "Computer Lab 1"
+    },
+    {
+        "name": "Dance Competition",
+        "category": "Cultural",
+        "date": "2026-09-22",
+        "venue": "Auditorium"
+    },
+    {
+        "name": "Football Tournament",
+        "category": "Sports",
+        "date": "2026-09-25",
+        "venue": "Sports Ground"
+    },
+    {
+        "name": "Web Development Workshop",
+        "category": "Technical",
+        "date": "2026-09-28",
+        "venue": "Computer Lab 2"
+    }
+]
