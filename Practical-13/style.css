@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf3f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #225b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #225b55;
+    margin-bottom: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid #2a6f68;
+    border-color: #2a6f68;
+}
+
+button {
+    background: #225b55;
+    color: white;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #17443f;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.secondary {
+    background: #777;
+}
+
+.secondary:hover {
+    background: #555;
+}
+
+.event-item {
+    border: 1px solid #e5e5e5;
+    border-left: 5px solid #2a6f68;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.event-item h3 {
+    color: #225b55;
+    margin-bottom: 8px;
+}
+
+.event-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.event-actions button {
+    margin-top: 12px;
+}
+
+.edit-btn {
+    background: #b47a20;
+}
+
+.edit-btn:hover {
+    background: #8f5f17;
+}
+
+.delete-btn {
+    background: #bd4141;
+}
+
+.delete-btn:hover {
+    background: #963030;
+}
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.success {
+    color: #237746;
+}
+
+.error {
+    color: #bd3030;
+}
+
+#loading {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
