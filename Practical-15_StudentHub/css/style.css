@@ -1,0 +1,297 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+
+:root {
+    --green:#225b55;
+    --green2:#2a6f68;
+    --pale:#fdf3f7;
+    --ink:#273331;
+    --muted:#65716f;
+    --white:#fff;
+    --line:#e4e9e7
+}
+
+body {
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--pale);
+    color:var(--ink);
+    line-height:1.6;
+    min-height:100vh
+}
+
+header {
+    background:var(--green);
+    color:#fff;
+    padding:26px 5%;
+    text-align:center
+}
+
+header h1 {
+    font-size:clamp(25px,4vw,36px);
+    letter-spacing:.2px
+}
+
+header p {
+    opacity:.9;
+    margin-top:4px
+}
+
+nav {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    flex-wrap:wrap;
+    background:#fff;
+    padding:12px 4%;
+    box-shadow:0 2px 8px #0000000c
+}
+
+nav a {
+    color:var(--green);
+    text-decoration:none;
+    padding:8px 11px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600
+}
+
+nav a:hover,nav a.active {
+    background:#e7f2ef
+}
+
+.container {
+    width:min(1100px,92%);
+    margin:30px auto 55px
+}
+
+.narrow {
+    max-width:540px
+}
+
+.hero {
+    padding:32px;
+    background:linear-gradient(135deg,#fff,#eaf5f1);
+    border:1px solid var(--line);
+    border-radius:14px;
+    margin-bottom:22px
+}
+
+.hero h2 {
+    font-size:30px;
+    color:var(--green);
+    margin-bottom:8px
+}
+
+.hero p {
+    max-width:720px;
+    color:var(--muted)
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px
+}
+
+.card {
+    background:#fff;
+    border:1px solid var(--line);
+    padding:23px;
+    border-radius:12px;
+    box-shadow:0 4px 14px #163b3510;
+    margin-bottom:18px
+}
+
+.card h2,.card h3 {
+    color:var(--green);
+    margin-bottom:12px
+}
+
+.card p {
+    margin:7px 0
+}
+
+.card ul {
+    padding-left:22px
+}
+
+.card li {
+    margin:5px 0
+}
+
+h2.page-title {
+    color:var(--green);
+    margin-bottom:20px;
+    font-size:28px
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:12px;
+    background:white
+}
+
+th,td {
+    text-align:left;
+    padding:12px;
+    border-bottom:1px solid var(--line)
+}
+
+th {
+    background:#edf5f2;
+    color:var(--green)
+}
+
+tr:last-child td {
+    border-bottom:0
+}
+
+label {
+    display:block;
+    font-weight:600;
+    font-size:14px;
+    margin:13px 0 6px
+}
+
+input,select,textarea {
+    font:inherit;
+    width:100%;
+    padding:11px 12px;
+    border:1px solid #cfd9d6;
+    border-radius:7px;
+    background:#fff;
+    color:var(--ink)
+}
+
+input:focus,select:focus,textarea:focus {
+    outline:2px solid #2a6f6830;
+    border-color:var(--green2)
+}
+
+button,.btn {
+    display:inline-block;
+    border:0;
+    border-radius:7px;
+    background:var(--green);
+    color:white;
+    text-decoration:none;
+    padding:11px 17px;
+    font-weight:700;
+    cursor:pointer;
+    font-size:14px
+}
+
+button:hover,.btn:hover {
+    background:var(--green2)
+}
+
+.full {
+    width:100%;
+    margin-top:18px
+}
+
+.inline {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:14px 0
+}
+
+.inline input {
+    width:auto
+}
+
+.inline label {
+    margin:0;
+    font-weight:400
+}
+
+.message {
+    padding:12px 14px;
+    border-radius:8px;
+    margin:12px 0;
+    background:#e8f5ee;
+    color:#215c3c
+}
+
+.error {
+    background:#fff0f0;
+    color:#9b2929
+}
+
+.muted {
+    color:var(--muted);
+    font-size:14px
+}
+
+.links {
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:15px
+}
+
+.links a {
+    color:var(--green)
+}
+
+.links a.btn {
+    color:#fff;
+    background:var(--green)
+}
+
+.links a.btn:hover {
+    color:#fff;
+    background:var(--green2)
+}
+
+.stat {
+    font-size:28px;
+    font-weight:bold;
+    color:var(--green)
+}
+
+footer {
+    text-align:center;
+    color:var(--muted);
+    padding:22px;
+    font-size:13px
+}
+
+@media(max-width:600px) {
+    header {
+    padding:22px 12px
+}
+
+nav {
+    gap:2px
+}
+
+nav a {
+    padding:7px;
+    font-size:13px
+}
+
+.container {
+    width:94%;
+    margin-top:18px
+}
+
+.card,.hero {
+    padding:18px
+}
+
+table {
+    font-size:13px
+}
+
+th,td {
+    padding:8px
+}
+
+}
